@@ -26,11 +26,9 @@ void setup() {
   bluetooth.begin(9600);  
   
   Serial.println("Bluetooth Test");
-  
   bluetooth.println("Hello from Arduino ADAS!");
   bluetooth.println("Bluetooth connection successful!");
 }
-
 void loop() {
   if (bluetooth.available()) {
     char c = bluetooth.read();
